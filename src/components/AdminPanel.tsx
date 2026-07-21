@@ -218,8 +218,13 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onLogout }) => {
       <div className="sticky top-0 z-30 bg-indigo-900 text-white shadow-md">
         <div className="max-w-md mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white/15 rounded-lg flex items-center justify-center font-black text-sm tracking-tighter text-indigo-100">
-              P+
+            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-950 border border-white/10">
+              <img 
+                src="/src/assets/images/app_logo_1784623222151.jpg" 
+                alt="Plus Pro Logo" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <h1 className="text-sm font-black tracking-tight">Plus Pro Admin</h1>
