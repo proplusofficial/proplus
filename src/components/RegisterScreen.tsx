@@ -4,6 +4,7 @@ import { User, Phone, Mail, Key, CreditCard, ChevronRight, Loader2, ArrowLeft, C
 import { useAuth } from '../context/AuthContext.js';
 import { useToast } from '../context/ToastContext.js';
 import { PaymentMethod } from '../types.js';
+import { Logo } from './Logo.js';
 
 interface RegisterScreenProps {
   onLoginClick: () => void;
@@ -98,13 +99,8 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onLoginClick, on
 
         {/* Title */}
         <div className="text-center space-y-2 flex flex-col items-center">
-          <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-zinc-800 flex items-center justify-center bg-zinc-950">
-            <img 
-              src="/src/assets/images/app_logo_1784623222151.jpg" 
-              alt="Plus Pro Logo" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+          <div className="w-10 h-10 flex items-center justify-center">
+            <Logo className="w-10 h-10" />
           </div>
           <div>
             <h2 className="text-2xl font-black text-slate-900 dark:text-zinc-100 tracking-tight text-center">Create Account</h2>
