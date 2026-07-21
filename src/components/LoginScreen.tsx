@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Key, ChevronRight, Loader2, Eye, EyeOff, Sparkles, HelpCircle, Shield, Clock, AlertTriangle, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.js';
 import { useToast } from '../context/ToastContext.js';
+import { Logo } from './Logo.js';
 
 interface LoginScreenProps {
   onRegisterClick: () => void;
@@ -163,13 +164,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onRegisterClick, onLog
       <div className="w-full max-w-sm mx-auto space-y-6">
         {/* Header Block */}
         <div className="text-center space-y-3 flex flex-col items-center">
-          <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-lg shadow-indigo-500/10 border border-slate-100 dark:border-zinc-800 flex items-center justify-center bg-zinc-950">
-            <img 
-              src="/src/assets/images/app_logo_1784623222151.jpg" 
-              alt="Plus Pro Logo" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+          <div className="w-16 h-16 flex items-center justify-center">
+            <Logo className="w-16 h-16" />
           </div>
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 select-none justify-center">
