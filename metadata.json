@@ -1,0 +1,6 @@
+{
+  "name": "Plus Pro",
+  "description": "Mobile-first order, status, and earnings tracking system with secure role-based authentication and real-time simulations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
