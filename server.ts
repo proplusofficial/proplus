@@ -3,7 +3,6 @@ import path from 'path';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import nodemailer from 'nodemailer';
-import { createServer as createViteServer } from 'vite';
 import { db } from './src/server/db.js';
 import { User, Order, Payment, OrderItem, OrderStatus, PaymentMethod } from './src/types.js';
 
@@ -942,6 +941,7 @@ app.post('/api/admin/payout', authenticateAdmin, (req: AuthRequest, res: Respons
 // ==========================================
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
