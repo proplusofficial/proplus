@@ -97,9 +97,19 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({ onLoginClick, on
         </button>
 
         {/* Title */}
-        <div className="text-center space-y-1">
-          <h2 className="text-2xl font-black text-slate-900 dark:text-zinc-100 tracking-tight">Create Account</h2>
-          <p className="text-xs text-slate-400 dark:text-zinc-500">Sign up and get paid Rs.100 per finished delivery</p>
+        <div className="text-center space-y-2 flex flex-col items-center">
+          <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md border border-slate-100 dark:border-zinc-800 flex items-center justify-center bg-zinc-950">
+            <img 
+              src="/src/assets/images/app_logo_1784623222151.jpg" 
+              alt="Plus Pro Logo" 
+              className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-slate-900 dark:text-zinc-100 tracking-tight text-center">Create Account</h2>
+            <p className="text-xs text-slate-400 dark:text-zinc-500 text-center">Sign up and get paid Rs.100 per finished delivery</p>
+          </div>
         </div>
 
         {/* Form Container */}
